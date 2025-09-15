@@ -1,12 +1,31 @@
-# React + Vite
+# ReactPlayz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ReactPlayz is a growing collection of fun, beginner-friendly React projects and micro-tutorials. From guessing games to to-do lists, each mini app is built to sharpen your skills, one playful line at a time. 🎮 Try. 💡 Learn. 🔁 Repeat. Whether you’re a new dev or just revisiting the basics, this is your playground. 🧠 Focus: React, JSX, DOM, APIs, OOP 💾 All projects in one place — open source, organized, and interactive.
 
-Currently, two official plugins are available:
+[Live Link](https://nickfrost2.github.io/ReactPlayz/ "ReactPlayz")
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# TO BUILD
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [X] Counter
+- [ ] Dice Roller
+- [ ] Digital Clock
+- [ ] Directional Stopwatch
+- [ ] Number Guesser game
+- [ ] Password Generator
+- [ ] Temeperature converter
+- [ ] Number base converter
+- [ ] Random Number Generator
+- [ ] Weather App
+- [ ] QR code generator
+- [ ] Learn your phone number
+- [ ] Word quess game for single player
+- [ ] Word quess game for multi player
+- [ ] StopWatch
+- [ ] Calculator
+- [ ] Rock Paper Sciccors
+- [ ] Weather App
+- [ ] Image Slider
+- [ ] Countdown Timer
+- [ ] Toast Notification
+- [ ] Random Quote/Fact Generator
+- [ ] Dictionary
