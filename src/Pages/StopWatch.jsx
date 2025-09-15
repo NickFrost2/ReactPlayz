@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import Navbar from "../Components/Navbar";
 function Stopwatch() {
 
    const [isRunning, setIsRunning] = useState(false)
@@ -45,6 +46,7 @@ function Stopwatch() {
    }
    return (
       <>
+         <Navbar />
          <h1>⏱️ Stopwatch</h1>
          <div className="counter-display">
             <h1>{time()}</h1>

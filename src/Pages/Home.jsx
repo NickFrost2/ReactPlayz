@@ -1,24 +1,24 @@
 /* eslint-disable no-unused-vars */
-import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import HomeBtn from '../Components/HomeBtn';
-import './home.css';
+import styles from './home.module.css';
 
 function Home() {
    return (
       <>
          <Link to="/" title="Home">
-            <nav>
+            <nav className={styles.nav}>
                <i className="fas fa-house"></i>
             </nav>
          </Link>
+
          <a href="https://github.com/NickFrost2/ReactPlayz" target="_blank" rel="noopener noreferrer" title="Go to repository">
-            <div className="github-icon">
+            <div className={styles.githubIcon}>
                <i className="fab fa-github"></i>
             </div>
          </a>
 
-         <main>
+         <main className={styles.main}>
             <HomeBtn name='Counter' icon="fa-solid fa-abacus" link='/counter' />
             <HomeBtn name='Stopwatch' icon="fas fa-stopwatch" link='/stopwatch' />
          </main>
