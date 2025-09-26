@@ -1,9 +1,9 @@
-/* eslint-disable no-unused-vars */
-import { useState } from 'react'
-import { Route, Routes, Link } from 'react-router-dom';
+
+import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
 import Counter from './Pages/Counter';
 import Stopwatch from './Pages/StopWatch';
+import Clock from './Pages/Clock';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='/counter' element={<Counter />} />
       <Route path='/stopwatch' element={<Stopwatch />} />
+      <Route path='/clock' element={<Clock />} />
     </Routes>
   )
 }

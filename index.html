@@ -1,14 +1,146 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css" />
-    <title>ReactPlayz</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+   <!-- *========= Meta Tags and Page Information ========= -->
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <!-- ? ------- SEO Optimization -------- -->
+   <meta name="robots" content="index, follow" />
+   <meta name="description"
+      content="Master React.js with hands-on interactive projects. From beginner components to advanced state management - build real applications and level up your React skills. Powered by Nick Frøst Innovations." />
+   <meta name="keywords"
+      content="React projects, learn React, React.js tutorials, component development, React hooks, state management, JSX, React Router, Context API, interactive React learning, web development, React exercises, Nick Frøst Innovations, beginner React, intermediate React, advanced React" />
+   <meta name="author" content="Nick Frøst Innovations" />
+
+   <!-- Open Graph / Facebook Meta Tags -->
+   <meta property="og:title" content="ReactPlayz - Interactive React.js Learning Projects" />
+   <meta property="og:description"
+      content="Master React.js through hands-on projects! From beginner components to advanced state management. Build real applications and become a React developer." />
+   <meta property="og:image" content="https://nickfrost2.github.io/ReactPlayz/images/reactplayz-preview.png" />
+   <meta property="og:url" content="https://nickfrost2.github.io/ReactPlayz/" />
+   <meta property="og:type" content="website" />
+   <meta property="og:site_name" content="ReactPlayz - React Learning Playground" />
+
+   <!-- *========== Twitter Meta Tags====== -->
+   <meta name="twitter:card" content="summary_large_image" />
+   <meta name="twitter:title" content="ReactPlayz - Learn React.js Through Interactive Projects" />
+   <meta name="twitter:description"
+      content="⚛️ Build. 🎯 Learn. 🚀 Deploy. Master React.js with 25+ hands-on projects from beginner components to advanced apps. Hooks, Context, Router & more!" />
+   <meta name="twitter:image" content="https://nickfrost2.github.io/ReactPlayz/images/reactplayz-preview.png" />
+   <meta name="twitter:creator" content="@nickfrost2" />
+
+   <!-- *========= Structured Data for SEO ========= -->
+   <script type="application/ld+json">
+       {
+         "@context": "https://schema.org",
+         "@type": "WebApplication",
+         "name": "ReactPlayz - React.js Learning Projects",
+         "applicationCategory": "EducationalApplication",
+         "offers": {
+           "@type": "Offer",
+           "price": "0",
+           "priceCurrency": "USD"
+         },
+         "operatingSystem": "All",
+         "description": "Interactive React.js learning platform with 25+ hands-on projects. Master React components, hooks, state management, and modern React patterns through practical coding exercises.",
+         "creator": {
+           "@type": "Organization",
+           "name": "Nick Frøst Innovations",
+           "url": "https://nickfrost-portfolio.vercel.app/"
+         },
+         "maintainer": {
+           "@type": "Person",
+           "name": "Nick Frøst",
+           "jobTitle": "Lead Developer & React Educator",
+           "email": "bensonnicholas206@gmail.com"
+         },
+         "inLanguage": "en-US",
+         "audience": {
+           "@type": "Audience",
+           "audienceType": "React Developers and Frontend Engineers"
+         },
+         "potentialAction": [
+           {
+             "@type": "PlayAction",
+             "target": {
+               "@type": "EntryPoint",
+               "urlTemplate": "https://nickfrost2.github.io/ReactPlayz/",
+               "description": "Try interactive React.js projects"
+             },
+             "object": {
+               "@type": "Thing",
+               "name": "React Learning Projects"
+             }
+           },
+           {
+             "@type": "LearnAction",
+             "target": {
+               "@type": "EntryPoint",
+               "urlTemplate": "https://nickfrost2.github.io/ReactPlayz/projects/",
+               "description": "Learn React.js through hands-on coding"
+             },
+             "object": {
+               "@type": "Thing",
+               "name": "Interactive React Tutorials"
+             }
+           }
+         ],
+         "about": [
+           {
+             "@type": "Thing",
+             "name": "React.js Development",
+             "description": "Learn modern React.js (18+) through practical, real-world projects and component-based exercises."
+           },
+           {
+             "@type": "Thing",
+             "name": "Frontend Development Skills",
+             "description": "Master React components, hooks, state management, routing, and modern frontend development practices."
+           }
+         ],
+         "mainEntityOfPage": {
+           "@type": "WebPage",
+           "url": "https://nickfrost2.github.io/ReactPlayz/"
+         },
+         "educationalLevel": "Beginner to Advanced",
+         "teaches": [
+           "React Components",
+           "React Hooks (useState, useEffect, useContext)",
+           "State Management",
+           "JSX and Virtual DOM",
+           "React Router",
+           "Context API",
+           "Modern React Patterns",
+           "Component Lifecycle"
+         ],
+         "programmingLanguage": "JavaScript",
+         "framework": "React.js"
+       }
+     </script>
+
+   <!-- *========= Favicon ========= -->
+   <link rel="icon" type="image/png" sizes="192x192" href="src/assets/images/ReactPlayz_Logo.png" />
+   <link rel="icon" type="image/png" sizes="32x32" href="src/assets/images/ReactPlayz_Logo.png" />
+   <link rel="icon" type="image/png" sizes="96x96" href="src/assets/images/ReactPlayz_Logo.png" />
+   <link rel="icon" type="image/png" sizes="16x16" href="src/assets/images/ReactPlayz_Logo.png" />
+   <meta name="theme-color" content="#61dafb" />
+   <meta name="apple-mobile-web-app-title" content="ReactPlayz - React Learning" />
+
+   <link rel="canonical" href="https://nickfrost2.github.io/ReactPlayz/" />
+
+   <!-- *========= External CSS Libraries ========= -->
+   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css" />
+
+   <!-- *========= Custom Stylesheet ========= -->
+   <link rel="stylesheet" href="assets/styles/homepage.css" />
+
+   <title>ReactPlayz - Master React.js Through Interactive Projects</title>
+</head>
+
+<body>
+   <div id="root"></div>
+   <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

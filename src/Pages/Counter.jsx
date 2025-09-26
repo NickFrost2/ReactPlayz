@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Navbar from "../Components/Navbar";
-import styles from "./counter.module.css"
+import styles from "../assets/styles/interface.module.css";
+import { UpBtn, DownBtn, ResetBtn } from "../Components/ControlBtn";
 
 function Counter() {
-
    const [count, setCount] = useState(0)
 
    function increment() {
@@ -19,16 +19,16 @@ function Counter() {
    }
    return (
       <section className={styles.body}>
-         <Navbar/>
+         <Navbar />
          <main className={styles.main}>
             <h1>🧮 Counter</h1>
-            <div className={styles.counterDisplay}>
+            <div className={styles.display}>
                <h1>{count}</h1>
             </div>
             <div className={styles.controls}>
-               <button className={`${styles.button} ${styles.increment}`} onClick={increment}>Increment &#8607;</button>
-               <button className={`${styles.button} ${styles.decrement}`} onClick={decrement}>Decrement &#8609;</button>
-               <button className={`${styles.button} ${styles.reset}`} onClick={reset}>Reset &#8635;</button>
+               <UpBtn name="increment" onClick={increment} />
+               <DownBtn name="decrement" onClick={decrement} />
+               <ResetBtn name="reset" onClick={reset} />
             </div>
          </main>
       </section>

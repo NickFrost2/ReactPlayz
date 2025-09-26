@@ -1,5 +1,7 @@
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import Navbar from "../Components/Navbar";
+import styles from "../assets/styles/interface.module.css";
 
 function Clock() {
    const [clock, setClock] = useState("00:00:00")
@@ -28,25 +30,15 @@ function Clock() {
    }, [])
 
    return (
-      <>
-         {/*Digital Clock */}
-         <div className="digitalClock">
-            <div className="clock-display">
+      <section className={styles.body}>
+         <Navbar />
+         <main className={styles.main}>
+            <h1>🕗 Clock</h1>
+            <div className={styles.display}>
                <h1>{clock}</h1>
             </div>
-
-
-
-            {/* <div className="toggle-container">
-               <label for="time-format">24hrs format</label> &ensp;
-               <label className="toggle-label">
-                  <input type="checkbox" class="toggle-peer" name="time-format" id="time-format" />
-                  <div className="toggle-div"></div>
-                  <div className="toggle-circle"></div>
-               </label>
-            </div> */}
-         </div>
-      </>
+         </main>
+      </section>
    );
 }
 

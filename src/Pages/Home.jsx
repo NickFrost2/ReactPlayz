@@ -1,7 +1,7 @@
-/* eslint-disable no-unused-vars */
+
 import { Link } from 'react-router-dom';
 import HomeBtn from '../Components/HomeBtn';
-import styles from './home.module.css';
+import styles from '../assets/styles/home.module.css';
 
 function Home() {
    return (
@@ -21,6 +21,7 @@ function Home() {
          <main className={styles.main}>
             <HomeBtn name='Counter' icon="fa-solid fa-abacus" link='/counter' />
             <HomeBtn name='Stopwatch' icon="fas fa-stopwatch" link='/stopwatch' />
+            <HomeBtn name='CLock' icon="fas fa-clock" link='/clock' />
          </main>
       </>
    )

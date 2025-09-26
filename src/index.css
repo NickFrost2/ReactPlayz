@@ -14,7 +14,7 @@
       box-sizing: border-box;
       padding: 0;
       margin: 0;
-      transition: all 10s ease-in-out;
+      transition: all 0.3s ease-in-out;
    }
 
    --primary-color: #f0c75e;

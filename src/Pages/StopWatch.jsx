@@ -1,5 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import Navbar from "../Components/Navbar";
+import { UpBtn, DownBtn, ResetBtn } from "../Components/ControlBtn";
+import styles from "../assets/styles/interface.module.css";
+
 function Stopwatch() {
 
    const [isRunning, setIsRunning] = useState(false)
@@ -45,18 +48,20 @@ function Stopwatch() {
       return currentClock;
    }
    return (
-      <>
+      <section className={styles.body}>
          <Navbar />
-         <h1>⏱️ Stopwatch</h1>
-         <div className="counter-display">
-            <h1>{time()}</h1>
-         </div>
-         <div className="controls">
-            <button onClick={start}>Start</button>
-            <button onClick={stop}>Stop</button>
-            <button onClick={reset}>Reset </button>
-         </div>
-      </>
+         <main className={styles.main}>
+            <h1>⏱️ Stopwatch</h1>
+            <div className={styles.displaySmall}>
+               <h1>{time()}</h1>
+            </div>
+            <div className={styles.controls}>
+               <UpBtn name="start" onClick={start} />
+               <DownBtn name="stop" onClick={stop} />
+               <ResetBtn name="reset" onClick={reset} />
+            </div>
+         </main>
+      </section>
    );
 }
 

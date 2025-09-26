@@ -1,0 +1,39 @@
+.controlBtn {
+   padding: 12px 20px;
+   font-size: 1.1em;
+   cursor: pointer;
+   border-radius: 8px;
+   outline: 0;
+   border: none;
+   color: white;
+   transition: all 0.3s ease-in-out, transform 0.2s ease;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+   &:hover {
+      transform: translateY(-2px);
+   }
+}
+
+.UpBtn {
+   background: linear-gradient(135deg, #00D4FF 0%, #00BFFF 100%);
+
+   &:hover {
+      background: linear-gradient(135deg, #00BFFF 0%, #001014 100%);
+   }
+}
+
+.DownBtn {
+   background: linear-gradient(135deg, #FF6B6B 0%, #FF4C4C 100%);
+
+   &:hover {
+      background: linear-gradient(135deg, #FF4C4C 0%, #001014 100%);
+   }
+}
+
+.ResetBtn {
+   background: linear-gradient(135deg, #FFDD59 0%, #FFB400 100%);
+
+   &:hover {
+      background: linear-gradient(135deg, #FFB400 0%, #001014 100%);
+   }
+}
