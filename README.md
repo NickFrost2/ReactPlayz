@@ -19,7 +19,7 @@ ReactPlayz is a growing collection of fun, beginner-friendly React projects and 
 Master the fundamentals of React with these essential building blocks.
 
 * [X] **Counter App** - State management with `useState`
-* [ ] **Digital Clock** - Real-time updates with `useEffect` and intervals
+* [X] **Digital Clock** - Real-time updates with `useEffect` and intervals
 * [ ] **Temperature Converter** - Form handling and controlled components
 * [ ] **Dice Roller** - Random number generation and conditional rendering
 * [ ] **Random Quote Generator** - Arrays, random selection, and component updates
